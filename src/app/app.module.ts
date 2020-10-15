@@ -6,20 +6,26 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import {FirmaPage} from '../pages/firma/firma';
+import { SignaturePadModule } from 'angular2-signaturepad';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    FirmaPage
   ],
   imports: [
     BrowserModule,
+    SignaturePadModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    FirmaPage
+
   ],
   providers: [
     StatusBar,
